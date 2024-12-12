@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mulah - Loyalty Points</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Logo Section -->
+    <div class="logo">
+      <img src="images/mulahtitle.png" alt="Mulah Logo" class="logo-image">
+    </div>
+    <!-- Welcome Section -->
+    <h2 class="welcome-text">Hello,<br>Welcome !</h2>
+    <p class="subtitle">Check Your Loyalty Points & Rewards</p>
+    <form class="input-group">
+      <div class="mobile-input">
+        <span class="country-code">+60</span>
+        <input type="tel" id="mobile-number" placeholder="Enter your mobile number" class="phone-input">
+        <div class="check-icon">&#10004; <!-- Unicode for checkmark --></div>
+      </div>
+      <div class="error" id="error-message"></div>
+      <button type="button" id="check-points-button" disabled>Check Loyalty Points</button>
+    </form>    
+    <!-- Footer Section -->
+    <div class="footer">
+      Powered by <a href="https://mulahrewards.com" target="_blank">MulahRewards.com</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

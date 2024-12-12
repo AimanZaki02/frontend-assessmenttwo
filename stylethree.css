@@ -1,0 +1,81 @@
+/* General Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* Main Container */
+.container {
+  width: 100%;
+  max-width: 360px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Logo Styling */
+.logo {
+  margin-bottom: 20px;
+}
+
+.logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+/* Confirmation Title */
+.confirmation-title {
+  font-family: 'Georgia', serif;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Data Box Styling */
+.data-box {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.data-box p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.data-box strong {
+  color: #555;
+}
+
+/* Footer Styling */
+.footer {
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.footer a {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

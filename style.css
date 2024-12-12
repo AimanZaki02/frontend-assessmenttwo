@@ -1,0 +1,171 @@
+        /* General Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        /* Main Container */
+        .container {
+            width: 640px;
+            max-width: 100%;
+            margin: auto;
+            padding: 20px;
+            height: 1136px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; /* Center container */
+        }
+
+        /* Logo Styling */
+        .logo {
+            display: flex;
+            justify-content: center; /* Centers the image horizontally */
+            width: 100%; /* Ensures logo remains centered */
+            margin-bottom: 30px;
+        }
+
+        .logo img {
+            max-width: 400px; /* Increased the size of the logo */
+            height: auto;
+        }
+
+        /* Welcome Text Styling */
+        .welcome-text {
+            font-family: 'Georgia', serif;
+            font-size: 48px; /* Larger font size */
+            font-weight: normal;
+            color: #666;
+            line-height: 1.2;
+            margin: 20px 0;
+            text-align: left; /* Align text to the left */
+            width: 100%; /* Ensure full-width alignment */
+        }
+
+        /* Subtitle Styling */
+        .subtitle {
+            font-size: 18px;
+            color: #ff6600;
+            margin-bottom: 30px;
+            text-align: left; /* Align text to the left */
+            width: 100%; /* Ensure full-width alignment */
+        }
+
+        /* Input Group */
+        .input-group {
+            width: 100%;
+            text-align: center;
+        }
+
+        .mobile-input {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 90%; /* Adjusts width for better fit */
+            border-bottom: 2px solid #ff6600; /* Adds the orange underline */
+            padding: 10px;
+            font-size: 18px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .country-code {
+            color: #333;
+            font-size: 18px;
+            margin-right: 10px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .phone-input {
+            width: 100%;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            padding: 0;
+            margin-left: 10px;
+        }
+
+        .phone-input::placeholder {
+            color: #999;
+            font-size: 16px;
+        }
+
+        .check-icon {
+            color: #666; /* Icon color */
+            font-size: 20px;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        /* Button Styling */
+        button {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 25px;
+            font-size: 20px;
+            cursor: pointer;
+            width: 70%; /* Reduce width to fit better */
+            margin-top: 20px;
+        }
+
+        button:disabled {
+            background-color: #ccc;
+        }
+
+        /* Error Message */
+        .error {
+            color: red;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        /* Footer Styling */
+        .footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #888;
+            text-align: center; /* Centers the footer */
+            width: 100%; /* Full width for alignment */
+        }
+
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    /* Check Icon Styling */
+    .check-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ccc; /* Gray background */
+        color: white; /* White tick */
+        width: 24px;
+        height: 24px;
+        border-radius: 50%; /* Circular shape */
+        margin-left: 10px; /* Spacing from input field */
+        font-size: 14px; /* Adjust tick size */
+        position: absolute; /* Positioning for accurate placement */
+        right: 10px; /* Align to the right edge */
+        top: 50%;
+        transform: translateY(-50%);
+        visibility: hidden; /* Hidden by default */
+    }
+    
+    /* Show the tick icon when input is valid */
+    .mobile-input.valid .check-icon {
+        visibility: visible; /* Display when input is valid */
+        background-color: #ff6600; /* Orange color for valid state */
+    }
+    
